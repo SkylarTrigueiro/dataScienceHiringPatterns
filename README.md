@@ -23,35 +23,35 @@ In this section, we will explore how job growth for data science has changed ove
 
 ![](images/barChartJobsFilledByYearAndQuarter.png)
 
-Ignoring the year 2020 for now, you'll notice that hiring spikes in the first quarter of every year and remaing positions are evenly split between the remaining quarters of the year. The spike in positions filled in the first quarter account for approximately 60% of all jobs filled in each year. It is also clear that the number of positions filled each year has been increasing. However, the pattern we see from 2015 through 2019 abruptly changes in 2020 when COVID-19 is introduced. Suddenly, a lot more positions have been filled in the second quarter compared to the previous years.
+Ignoring the year 2020 for now, you'll notice that hiring spikes in the first quarter of every year and then the remaing quarters have an even divide of the remaining positions for the year. The spikes, that takes place in first quarter, accounts for approximately 60% of all jobs filled in each year. Another clear trend is that the number of positions filled each year has been increasing. However, the pattern we see from 2015 through 2019 abruptly changes in 2020 when COVID-19 begins spreading. Suddenly, a lot more positions have been filled in the second quarter compared to the previous years and the increasing trend appears to have stopped.
 
 Since I only have data for the first three quarters of 2020, I will now verify that hiring has slowed down by looking at the total jobs hired for the first three quarters of the year.
 
 ![](images/barCharJobsFilledByYearQ1throughQ3.png)
 
-Now that it's confirmed that hiring is down in 2020, I would like to know what kinds of positions were affected the most. Admittedly, I have a strong bias towards the theory that it was early career positions that were affected the most.
+This last plot confirms that hiring is slightly down, ending the increasing pattern in positions. As someone hoping to land my first data science job, I would like to know how this is affecting early career positions. I hypothesize that early career positions were dispraportionately affected more than senior positions.
 
 ## Salary
 
-To gather some insight on what happened in 2020, let's start by taking a look at a box plot of salaries to get an idea of how well data scientists are paid.
+To obtain more insight on what happened in 2020, let's start by taking a look at a box plot of salaries to get an idea of how well data scientists are paid.
 
 ![](images/boxPlotSalary.png)
 
-So the first quartile has a salary of 83k, the median is 104k and the third quartile is 133k. Now let's break this down by year and see how salaries have been changing.
+So the first quartile is 83k, the median is 104k and the third quartile is 133k. Now let's break this down by year and see how salaries have been changing.
 
 ![](images/boxPlotSalaryByYear.png)
 
-In summary, from 2015 to 2016, the salaries went down in every quartile. Then salaries went up and remained steady from 2017 to 2018. Then an increasing trend appears where between 1 and 3 thousand dollars is added to the quartiles each year through 2020. It's difficult to look at these plots and say that anything strange happened. The small increases from 2019 to 2020 seem not that significant. Recall that 2020 is still missing it's 4th quarter which might be affecting the values of the quartiles.
+In summary, from 2015 to 2016, the salaries went down in every quartile. Then salaries went up and remained steady from 2017 to 2018. Then an increasing trend appears where between 1 and 3 thousand dollars is added to the quartiles each year through 2020. It's difficult to look at these plots and say that anything strange happened. The small increases from 2019 to 2020 seems insignificant. However, please recall that 2020 is still missing it's 4th quarter which might be affecting the values of the quartiles.
 
 ![](images/boxPlotSalariesByYearAndQuarter.png)
 
-There's a lot of information to make sense of in this last plot. First I would like to point out that the positions filled in 4th quarter tends to have a higher salary compared to earlier quarters, which means that the quartiles for 2020 in the plot above most likely appear lower than they should be.
+There's a lot of information to make sense of in this last plot. First I would like to point out that the positions filled in 4th quarter tends to have a higher salary compared to earlier quarters, which means that the quartiles for 2020 in the previous plot are most likely lower than they should be.
 
-Second, salaries in the first quarter of each year appear to be when salaries are at the lowest. I would interpret this to mean that the first quarter is when the most early career positions are filled. In 2020, however, the quartiles for salaries in the first quarter look much higher than the first quarters of previous years possibly indicating that this didn't happen.
+Second, salaries in the first quarter of each year appear to be when salaries are at the lowest. I would interpret this to mean that the first quarter is when the most early career positions are filled. In 2020, however, the quartiles for salaries in the first quarter look much higher than the first quarters of previous years possibly indicating that this didn't happen. It might be difficult to see, so we'll take a closer look shortly.
 
-Third, the quartiles in the second quarter of 2020 are much lower than the quartiles in the first quarter. This probably means that the early carerer positions that were traditionally filled in the first quarter were most likely pushed into the second quarter.
+Third, the quartiles in the second quarter of 2020 are much lower than the quartiles in the first quarter. This probably means that the early carerer positions that were traditionally filled in the first quarter were most likely pushed into the second quarter. We'll examine these quarters after we visit the first quarter plots.
 
-Let's turn our focus back onto the first quarter of each year and confirm the sharp uptick in salaries.
+Now, let's turn our focus back onto the first quarter of each year and confirm the sharp uptick in salaries.
 
 ![](images/boxPlotSalaryByYearAndQ1.png)
 
@@ -67,19 +67,21 @@ Here we can see that the quartiles in the second quarter of 2020 are all down by
 
 With the two quarters combined we can see that the salary distribution for the combined first and second quarter in 2020 is still up compared to previous years by about 4k or more in each of the quartiles. Now let's combine all three quarters and see how the years compare. This way we are comparing the complete information of all years.
 
-![](images/boxPlotSalaryByQ1ThroughQ3.png)
+![](images/boxPlotSalaryByYearAndQ1ThroughQ3.png)
 
- We still see that the distribution for 2020 is up by about 4k in the first quartile, median, and third quartile compared to past years. So far I have been trying to conclude that early career positions weren't filled in 2020, but is there another possible explanation? Maybe the states and cities with the highest wages were hiring early career positions and that's why the salaries are seeing this boost. Let's now explore this idea 
+ We still see that the distribution for 2020 is up by about 4k in the first quartile, median, and third quartile compared to past years. If the slow down in hiring and the increase in salaries were the only variables that changed, then I would feel comfortable concluding that early career positions were hit the hardest by COVID-19. However, I also have information on location and which companies have been hiring so let's explore this data to see what's been changing here. 
 
 ## Locations
 
-Let's first take a look at the distribution of salaries by states. The states will be organized by median salary in descending order.
+Let's first take a look at the distribution of salaries by states and the total number of jobs by states in each state.
 
 ![](images/boxPlotSalaryByState.png)
 
+Note that the median salary in California, Washington, and New York are above the median income of data scientists as a whole. Idaho is close but, as we're about to see, it doesn't have that many positions so it won't have a huge effect on the quantiles.
+
 ![](images/barChartStateEmployment.png)
 
-Now let's take a look at how the share of hiring by state has changed.
+Now let's take a look at how the share of hiring by state has changed over the years.
 
 2015:
 ![](images/pieChartLocations2015.png)
@@ -99,15 +101,15 @@ Now let's take a look at how the share of hiring by state has changed.
 2020:
 ![](images/pieChartLocations2020.png)
 
-Note that California, New York, and Washington, have the highest salaries and the most data scientists, but their share of the data scientists hired each year has been steadily shrinking. In total, the percentage has gone from 71% of all positions in 2015 to 56% of all positions in 2020. Given that the salaries in these other states are typically less, one would expect the salaries to be going down even though that wasn't the case. So perhaps, the reason that salaries are up is because the biggest companies are hiring fewer early career positions than they used to.
+Note that California's, New York's, and Washington's share of the data scientists hired each year has been steadily shrinking. In total, the percentage has gone from 71% of all positions in 2015 to 56% of all positions in 2020. Given that the salaries in other states are typically lower, one would expect that the salary quartiles would be going down. We know that wasn't the case which I believe further credits the hypothesis that early career positions were hurt the most in 2020. Now let's take a look at the companies that hire the most data scientists and see how trends have been changing there.
 
 ## Big Companies
 
-Let's start by exploring 
+Let's start by exploring the salaries of data scientists at the companies that hire the most data scientists.
 
 ![](images/boxPlotSalaryByTop10Employer.png)
 
-Note that all of these companies', except IBM, have median salaries that are considerably higher the median salary of data scientists as a whole. Now that we've seen what the distribution of these salaries look like, let's take a look at how these salaries have changed over time.
+Note that all of these companies, except IBM, have median salaries that are considerably higher the median salary of data scientists as a whole. In fact, seven of them have first quartiles that are much larger than the median of data scientists as a whole. They also account for almost 20% of all data scientists. A disruption in hiring at these companies would certainly have a noticeable affect on salaries in 2020. Therefore, I blieve it's worth investigating how these salaries have changed over time.
 
 ![](images/boxPlotSalaryByYearAndQ1ThroughQ3Top10Employers.png)
 
