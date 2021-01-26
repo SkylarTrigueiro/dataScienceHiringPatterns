@@ -2,7 +2,7 @@
 
 ## Table of Contents
 * [Overview](#overview)
-* [Data?](#Data)
+* [Data](#Data)
 * [Job Growth](#Job-Growth)
 * [Salary](#Salary)
 * [Locations](#Locations)
@@ -15,7 +15,7 @@ This project has two purposes. First, I would like to see what effect COVID-19 h
 
 ## Data
 
-The data for this project was scraped from the website h1bdata.info using a webscraper that can be found on the following github page: https://github.com/mingen-pan/Scraping-H1B-visa-info (Thank you Mingen Pan!). The data consists of an individuals employer, location by state and city, salary, and the date that the offer was submitted.
+The data for this project was scraped from the website h1bdata.info using a webscraper that can be found on the following github page: https://github.com/mingen-pan/Scraping-H1B-visa-info (Thank you Mingen Pan!). The data consists of an individual's employer, location by state and city, salary, and the date that the offer was submitted.
 
 ## Job Growth
 
@@ -23,13 +23,13 @@ In this section, we will explore how job growth for data science has changed ove
 
 ![](images/barChartJobsFilledByYearAndQuarter.png)
 
-Ignoring the year 2020 for now, you'll notice that hiring spikes in the first quarter of every year and remaing positions are evenly split between the remaining quarters of the year. The spike in positions filled in the first quarter account for approximately 60% of all jobs filled in each given year. It is also clear that the number of positions filled each year has been increasing each year. Things obviously change when we look at when jobs are filled in 2020. A lot more positions have been filled in the second quarter compared to the previous years.
+Ignoring the year 2020 for now, you'll notice that hiring spikes in the first quarter of every year and remaing positions are evenly split between the remaining quarters of the year. The spike in positions filled in the first quarter account for approximately 60% of all jobs filled in each year. It is also clear that the number of positions filled each year has been increasing. However, the pattern we see from 2015 through 2019 abruptly changes in 2020 when COVID-19 is introduced. Suddenly, a lot more positions have been filled in the second quarter compared to the previous years.
 
 Since I only have data for the first three quarters of 2020, I will now verify that hiring has slowed down by looking at the total jobs hired for the first three quarters of the year.
 
 ![](images/barCharJobsFilledByYearQ1throughQ3.png)
 
-So now that it's confirmed that hiring is down in 2020, it would be helpful to know where the missing positions who was been the most affected by the drop in hiring. 
+Now that it's confirmed that hiring is down in 2020, I would like to know what kinds of positions were affected the most. Admittedly, I have a strong bias towards the theory that it was early career positions that were affected the most.
 
 ## Salary
 
@@ -41,27 +41,35 @@ So the first quartile has a salary of 83k, the median is 104k and the third quar
 
 ![](images/boxPlotSalaryByYear.png)
 
-In summary, from 2015 to 2016, the salaries went down in every quartile. Then salaries went up and remained steady from 2017 to 2018. Then an increasing trend appears between 1 and 3 thousand dollars to the first quartile, median, and third quartile compared to the previous year. It's difficult to look at these plots and say that anything strange is going on, so let's take a look at how salaries have been changing from quarter to quarter.
+In summary, from 2015 to 2016, the salaries went down in every quartile. Then salaries went up and remained steady from 2017 to 2018. Then an increasing trend appears where between 1 and 3 thousand dollars is added to the quartiles each year through 2020. It's difficult to look at these plots and say that anything strange happened. The small increases from 2019 to 2020 seem not that significant. Recall that 2020 is still missing it's 4th quarter which might be affecting the values of the quartiles.
 
 ![](images/boxPlotSalariesByYearAndQuarter.png)
 
-There's a lot of information to sift through in this last plot, but I think the main focus should be that hiring in the first quarter is usually when the salaries are the lowest for the year. I would interpret this to mean that this is when the most early career employees are hired since they would be expected to have the lowest salaries. Notice that in 2020, the distribiution for salaries in the first quarter appears to be way up compared to previous first quarters. This could indicate that fewer early career positions were filled for the year. To make sure, let's take a closer look at the first quarters of each year.
+There's a lot of information to make sense of in this last plot. First I would like to point out that the positions filled in 4th quarter tends to have a higher salary compared to earlier quarters, which means that the quartiles for 2020 in the plot above most likely appear lower than they should be.
+
+Second, salaries in the first quarter of each year appear to be when salaries are at the lowest. I would interpret this to mean that the first quarter is when the most early career positions are filled. In 2020, however, the quartiles for salaries in the first quarter look much higher than the first quarters of previous years possibly indicating that this didn't happen.
+
+Third, the quartiles in the second quarter of 2020 are much lower than the quartiles in the first quarter. This probably means that the early carerer positions that were traditionally filled in the first quarter were most likely pushed into the second quarter.
+
+Let's turn our focus back onto the first quarter of each year and confirm the sharp uptick in salaries.
 
 ![](images/boxPlotSalaryByYearAndQ1.png)
 
-Now it should be clear that salaries are up in the first quarter. The first quartile, median, and third quartile are each up by about 10k. I would assume this means that fewer early career positions were created or filled due to uncertainty in how COVID-19 would affect the economy. We also know that hiring saw a huge increase in the second quarter compared to previous years, so it's possible that a lot of those early career positions were just filled later. To verify this, let's take a look at the salary distributions of the second quarter of each year:
+Now it should be easier to see that quartiles of salaries in the first quarter of 2020 are higher than in the first quarter of previous years by approxcimately 10k each. 
+
+The most likely cause of this disruption is that the impact COVID-19 created uncertainty on how it would impact business and the training of new employeers. Now Let's examine the second quarters of each year and see how different it was from previous years:
 
 ![](images/boxPlotSalariesByYearAndQ2.png)
 
-Here we can see that the second quarter made up for a lot of the missing early career positions that are usually filled in the first quarter. The first quartile, median, and third quartile positions are all down by about 13k, which should be an indicator that more early career positions were filled during this time. However, there were also fewer positions in total for the second quarter so it would be useful to see how the combined first and second quarter box plots have effected salary distributions.
+Here we can see that the quartiles in the second quarter of 2020 are all down by about 13k compared to previous years. This appears to confirm that more early career positions were filled in this quarter. Since 2020 split a lot of positions between the first and second quarter, let's now combine the first and second quarter of each year and see how different the years appear.
 
 ![](images/boxPlotSalaryByQ1throughQ2.png)
 
-With the two quarters combined we can see that the salary distribution for the combined first and second quarter in 2020 is still up compared to previous years by about 4k or more in the first quartile, median, and third quartile. This probably means that early careers positions were reduced in the first two quarters of the year. Remember, we only have the first three quarters of 2020 so the last comparison should be all data on the first three quarters of the year.
+With the two quarters combined we can see that the salary distribution for the combined first and second quarter in 2020 is still up compared to previous years by about 4k or more in each of the quartiles. Now let's combine all three quarters and see how the years compare. This way we are comparing the complete information of all years.
 
 ![](images/boxPlotSalaryByQ1ThroughQ3.png)
 
- We still see that the distribution for 2020 is up by about 4k in the first quartile, median, and third quartile compared to past years. So if the salaries are up, then why? Maybe the states and cities with the highest wages were hiring early career positions and that's why the salaries are seeing this boost. 
+ We still see that the distribution for 2020 is up by about 4k in the first quartile, median, and third quartile compared to past years. So far I have been trying to conclude that early career positions weren't filled in 2020, but is there another possible explanation? Maybe the states and cities with the highest wages were hiring early career positions and that's why the salaries are seeing this boost. Let's now explore this idea 
 
 ## Locations
 
@@ -91,7 +99,7 @@ Now let's take a look at how the share of hiring by state has changed.
 2020:
 ![](images/pieChartLocations2020.png)
 
-Note that California, New York, and Washington, have the highest salaries and the most data scientists, but their share of the data scientists hired each year has been steadily shrinking. In total, the percentage has gone from 71% of all positions in 2015 to 56% of all positions in 2020. So perhaps, the reason that salaries are up is because the biggest companies are hiring fewer early career positions than they used to.
+Note that California, New York, and Washington, have the highest salaries and the most data scientists, but their share of the data scientists hired each year has been steadily shrinking. In total, the percentage has gone from 71% of all positions in 2015 to 56% of all positions in 2020. Given that the salaries in these other states are typically less, one would expect the salaries to be going down even though that wasn't the case. So perhaps, the reason that salaries are up is because the biggest companies are hiring fewer early career positions than they used to.
 
 ## Big Companies
 
@@ -103,7 +111,7 @@ Note that all of these companies', except IBM, have median salaries that are con
 
 ![](images/boxPlotSalaryByYearAndQ1ThroughQ3Top10Employers.png)
 
-These box plots show that the top hiring data science companies have steadily been paying  raising the salaries of their newly hired employees each year. 2020 in particular saw the largest increase in the median salary of newly appointed data scientists at these companies with the first quartile, median, and third quartile all up by 10k compared to the previous year. Now let's take a look at how many positions were filled in the first three quarters of each year.
+These box plots show that the companies that hire the most data scientists have steadily been raising the salaries of their newest employees each year. 2020 in particular saw the largest increase in the median salary of their newest data scientists, with all quartiles up by 10k compared to the previous year. Now let's take a look at how many positions were filled in the first three quarters of each year.
 
 ![](images/boxPlotSalaryByYearAndQ1ThroughQ3Top10Employers.png)
 
