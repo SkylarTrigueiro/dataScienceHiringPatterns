@@ -23,13 +23,13 @@ In this section, we will explore how job growth for data science has changed ove
 
 ![](images/barChartJobsFilledByYearAndQuarter.png)
 
-Ignoring the year 2020 for now, you'll notice that hiring spikes in the first quarter of every year and then the remaing quarters have an even divide of the remaining positions for the year. The spikes, that takes place in first quarter, accounts for approximately 60% of all jobs filled in each year. Another clear trend is that the number of positions filled each year has been increasing. However, the pattern we see from 2015 through 2019 abruptly changes in 2020 when COVID-19 begins spreading. Suddenly, a lot more positions have been filled in the second quarter compared to the previous years and the increasing trend appears to have stopped.
+Ignoring the year 2020 for now, you'll notice that hiring spikes in the first quarter of every year and then the remaing quarters have an even divide of the remaining positions for the year. The spikes, that takes place in first quarter, account for approximately 60% of all jobs filled in each year. Another clear trend is that the number of positions filled each year has been increasing. However, the pattern we see from 2015 through 2019 abruptly changes in 2020 when COVID-19 begins spreading. Suddenly, a lot more positions have been filled in the second quarter compared to the previous years and the increasing trend appears to have stopped.
 
 Since I only have data for the first three quarters of 2020, I will now verify that hiring has slowed down by looking at the total jobs hired for the first three quarters of the year.
 
 ![](images/barCharJobsFilledByYearQ1throughQ3.png)
 
-This last plot confirms that hiring is slightly down, ending the increasing pattern in positions. As someone hoping to land my first data science job, I would like to know how this is affecting early career positions. I hypothesize that early career positions were dispraportionately affected more than senior positions.
+This last plot confirms that hiring is slightly down, ending the increasing pattern in positions. As someone hoping to land my first data science job, I would like to know how this is affecting early career positions. I would assume just knowing that positions are down, that early career positions are harmed the most when the number of positions goes down based on the fact that early career positions require more training and mentorship than senior positions do.
 
 ## Salary
 
