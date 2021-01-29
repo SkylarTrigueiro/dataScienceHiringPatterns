@@ -7,8 +7,8 @@
 * [Salary](#Salary)
 * [Locations](#Locations)
 * [Big Companies](#Big-Companies)
-* [What if COVID-19 Never Happened?](#What-if?)
-* [Conclusion]
+* [What if COVID-19 Never Happened?](#What-if-COVID-19-Never-Happened?)
+* [Conclusion](#Conlclusion)
 * [References](#References)
 
 ## Overview
