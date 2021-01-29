@@ -7,8 +7,8 @@
 * [Salary](#Salary)
 * [Locations](#Locations)
 * [Big Companies](#Big-Companies)
-* [What if COVID-19 Never Happened?](#What-if-COVID-19-Never-Happened?)
-* [Conclusion](#Conlclusion)
+* [2020 Projections](#2020-Projections)
+* [Conclusion](#Conclusion)
 * [References](#References)
 
 ## Overview
@@ -135,7 +135,7 @@ What's interesting to note here is that the first quartile and median salaries o
 
 So maybe the largest companies that hire data scientists fill or create as many early career positions  as they had in previous years. If enough larger data science companies continued this pattern, then maybe this is the reason that salaries are up in 2020.
 
-## What if COVID-19 Never Happened?
+## 2020 Projections
 
 I'd like to consider what might have happened if COVID-19 never happened. Specifically, I would like to know what the job growth for data scientists might have looked like? To answer this question, an ARIMA model will be fit to the total jobs filled in each quarter from 2015 through 2018 as a training set. The quarters in 2019 will be used as a validation set and the quarters in 2020 will be the test set. If the results seem reasonable, then projections will be made.
 
