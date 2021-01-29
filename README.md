@@ -1,4 +1,4 @@
-# Data Science Hiring Patterns
+# COVID-19's Disruption of Data Scientist Job Growth
 
 ## Table of Contents
 * [Overview](#overview)
@@ -7,6 +7,8 @@
 * [Salary](#Salary)
 * [Locations](#Locations)
 * [Big Companies](#Big-Companies)
+* [What if COVID-19 Never Happened?](#What-if?)
+* [Conclusion]
 * [References](#References)
 
 ## Overview
@@ -127,11 +129,27 @@ As we can see the pattern matches what we saw earlier. Most positions were fille
 
 Just as before, the salaries the distribution of salaries is lowest during the first quarter of each year and then higher for each quarter afterwards. It also appears that the salaries have been steadily increasing. Let's investigate this further by comparing the salaries only in the first quarter. 
 
-![](images/boxPlotSalaryByYearAndQ1Top10Employers.png) 
+![](images/boxPlotSalaryByYearAndQ1Top10Employers.png)
 
 What's interesting to note here is that the first quartile and median salaries of positions in 2020 are up by 10k compared to 2019 but even 2019 saw 7k, 7k, and 15k, increases in the first quartile, median, and third quartile compared to 2018, respectively.
 
-So maybe the largest companies that hire data scientists fill or create as many early career positions  as they had in previous years. If enough larger data science companies continued this pattern, then maybe this is the reason that salaries are up in 2020.  
+So maybe the largest companies that hire data scientists fill or create as many early career positions  as they had in previous years. If enough larger data science companies continued this pattern, then maybe this is the reason that salaries are up in 2020.
+
+## What if COVID-19 Never Happened?
+
+I'd like to consider what might have happened if COVID-19 never happened. Specifically, I would like to know what the job growth for data scientists might have looked like? To answer this question, an ARIMA model will be fit to the total jobs filled in each quarter from 2015 through 2018 as a training set. The quarters in 2019 will be used as a validation set and the quarters in 2020 will be the test set. If the results seem reasonable, then projections will be made.
+
+![](images/ArimaModelValidationAndTest.png)
+
+The results of the ARIMA model are as follows. On the training set the model achieves an RMSE of 175.2, on the validation set the RMSE is 88.6, and on the test set the RMSE is 899.5. So the model performs well on the validation set and doesn't do well on the test set. Since the model appears to capture the trend well, I'm going to assume that the projection into 2020 is fairly accurate. Therefore, if COVID-19 never happened, then the number of jobs in the first three quarters of 2020 should have totaled 4,462, which is 26.1% more than the 3,538 jobs that were filled. Note, that if the ARIMA model is updated to include 2019 as part of the training set, then our model does not change much as the next plot will show.
+
+![](images/ArimaModelTest.png)
+
+In this case the model achieves an RMSE of 162.1 on the training set and an RMSE of 919.4. on the test set. The projection for 2020 changes to 4,506, which is 27.4% more than the the actual number of jobs filled.
+
+## Conclusion
+
+Based on this evidence presented in this data, I would argue that if COVID-19 never happened, then 26-27% more positions would have been created based on model projections. Second, the positions that weren't created or filled were most likely early career positions based on the shift in the quartiles of salaries in 2020 compared to previous years. This trend seems to be especially prevalent among larger tech companies.
 
 ## References
 
