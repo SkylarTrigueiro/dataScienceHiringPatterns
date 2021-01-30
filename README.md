@@ -141,7 +141,7 @@ I'd like to consider what might have happened if COVID-19 never happened. Specif
 
 ![](images/ArimaModelValidationAndTest.png)
 
-The results of the SARIMA model are as follows. On the training set the model achieves an RMSE of 175.2, on the validation set the RMSE is 88.6, and on the test set the RMSE is 899.5. So the model performs well on the validation set and doesn't do well on the test set. Since the model appears to capture the trend well, I'm going to assume that the projection into 2020 is fairly accurate. Therefore, if COVID-19 never happened, then the number of jobs in the first three quarters of 2020 should have totaled 4,462, which is 26.1% more than the 3,538 jobs that were filled. Note, that if the SARIMA model is updated to include 2019 as part of the training set, then our model does not change much as the next plot will show.
+The results of the SARIMA model are as follows. On the training set the model achieves an RMSE of 175.2, on the validation set the RMSE is 88.6, and on the test set the RMSE is 899.5. So the model performs well on the validation set and doesn't do well on the test set. Since the model appears to capture the trend well, I'm going to assume that the projection into 2020 is fairly accurate. Therefore, if COVID-19 never happened, then the number of jobs in the first three quarters of 2020 should have totaled 4,462, which is 26.1% more than the 3,538 jobs that were filled. Note, that even when the training data is updated to include 2019, the model's forecast does not change very much.
 
 ![](images/ArimaModelTest.png)
 
