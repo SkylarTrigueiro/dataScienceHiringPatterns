@@ -137,11 +137,11 @@ So maybe the largest companies that hire data scientists fill or create as many 
 
 ## 2020 Projections
 
-I'd like to consider what might have happened if COVID-19 never happened. Specifically, I would like to know what the job growth for data scientists might have looked like? To answer this question, an ARIMA model will be fit to the total jobs filled in each quarter from 2015 through 2018 as a training set. The quarters in 2019 will be used as a validation set and the quarters in 2020 will be the test set. If the results seem reasonable, then projections will be made.
+I'd like to consider what might have happened if COVID-19 never happened. Specifically, I would like to know what the job growth for data scientists might have looked like? To answer this question, a SARIMA model will be fit to the total jobs filled in each quarter from 2015 through 2018 as a training set. The quarters in 2019 will be used as a validation set and the quarters in 2020 will be the test set. If the results seem reasonable, then projections will be made.
 
 ![](images/ArimaModelValidationAndTest.png)
 
-The results of the ARIMA model are as follows. On the training set the model achieves an RMSE of 175.2, on the validation set the RMSE is 88.6, and on the test set the RMSE is 899.5. So the model performs well on the validation set and doesn't do well on the test set. Since the model appears to capture the trend well, I'm going to assume that the projection into 2020 is fairly accurate. Therefore, if COVID-19 never happened, then the number of jobs in the first three quarters of 2020 should have totaled 4,462, which is 26.1% more than the 3,538 jobs that were filled. Note, that if the ARIMA model is updated to include 2019 as part of the training set, then our model does not change much as the next plot will show.
+The results of the SARIMA model are as follows. On the training set the model achieves an RMSE of 175.2, on the validation set the RMSE is 88.6, and on the test set the RMSE is 899.5. So the model performs well on the validation set and doesn't do well on the test set. Since the model appears to capture the trend well, I'm going to assume that the projection into 2020 is fairly accurate. Therefore, if COVID-19 never happened, then the number of jobs in the first three quarters of 2020 should have totaled 4,462, which is 26.1% more than the 3,538 jobs that were filled. Note, that if the SARIMA model is updated to include 2019 as part of the training set, then our model does not change much as the next plot will show.
 
 ![](images/ArimaModelTest.png)
 
