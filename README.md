@@ -113,7 +113,7 @@ Let's start by exploring the salaries of data scientists at the companies that h
 
 Note that all of these companies, except IBM, have median salaries that are considerably higher the median salary of data scientists as a whole. In fact, seven of them have first quartiles that are much larger than the median of data scientists as a whole. They also account for almost 20% of all data scientists. A disruption in hiring at these companies would certainly have a noticeable affect on salaries in 2020. Therefore, I blieve it's worth investigating how these salaries have changed over time.
 
-![](images/boxPlotSalaryByYearAndQ1ThroughQ3Top10Employers.png)
+![](images/boxPlotSalaryByYearTop10Employers.png)
 
 These box plots show that the companies that hire the most data scientists have steadily been raising the salaries of their newest employees each year. 2020 in particular saw the largest increase in the median salary of their newest data scientists, with all quartiles up by 10k compared to the previous year. Now let's take a look at how many positions were filled in the first three quarters of each year.
 
