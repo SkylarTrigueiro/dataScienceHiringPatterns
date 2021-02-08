@@ -83,25 +83,31 @@ Note that the median salary in California, Washington, and New York are above th
 
 ![](images/barChartStateEmployment.png)
 
-Now let's take a look at how the share of hiring by state has changed over the years.
+Now let's take a look at how salaries and each the percentage of data scientists has changed over the years.
 
 2015:
 ![](images/pieChartLocations2015.png)
+![](images/boxPlotSalaryByState2015.png)
 
 2016:
 ![](images/pieChartLocations2016.png)
+![](images/boxPlotSalaryByState2016.png)
 
 2017:
 ![](images/pieChartLocations2017.png)
+![](images/boxPlotSalaryByState2017.png)
 
 2018:
 ![](images/pieChartLocations2018.png)
+![](images/boxPlotSalaryByState2018.png)
 
 2019:
 ![](images/pieChartLocations2019.png)
+![](images/boxPlotSalaryByState2019.png)
 
 2020:
 ![](images/pieChartLocations2020.png)
+![](images/boxPlotSalaryByState2020.png)
 
 Note that California's, New York's, and Washington's share of the data scientists hired each year has been steadily shrinking. In total, the percentage has gone from 71% of all positions in 2015 to 56% of all positions in 2020. Given that the salaries in other states are typically lower, one would expect that the salary quartiles would be going down. We know that wasn't the case which I believe further credits the hypothesis that early career positions were hurt the most in 2020. Now let's take a look at the companies that hire the most data scientists and see how trends have been changing there.
 
