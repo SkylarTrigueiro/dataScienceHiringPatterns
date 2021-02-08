@@ -86,32 +86,32 @@ Note that the median salary in California, Washington, and New York are above th
 
 Now let's take a look at how salaries and the percentage of data scientists hired by state has changed over the years.
 
-###2015:
+### 2015:
 
 ![](images/pieChartLocations2015.png)
 ![](images/boxPlotSalaryByState2015.png)
 
-###2016:
+### 2016:
 
 ![](images/pieChartLocations2016.png)
 ![](images/boxPlotSalaryByState2016.png)
 
-###2017:
+### 2017:
 
 ![](images/pieChartLocations2017.png)
 ![](images/boxPlotSalaryByState2017.png)
 
-###2018:
+### 2018:
 
 ![](images/pieChartLocations2018.png)
 ![](images/boxPlotSalaryByState2018.png)
 
-###2019:
+### 2019:
 
 ![](images/pieChartLocations2019.png)
 ![](images/boxPlotSalaryByState2019.png)
 
-###2020:
+### 2020:
 
 ![](images/pieChartLocations2020.png)
 ![](images/boxPlotSalaryByState2020.png)
