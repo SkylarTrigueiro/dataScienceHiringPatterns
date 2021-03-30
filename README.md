@@ -13,7 +13,7 @@
 
 ## Overview
 
-This project has two purposes. First, I would like to see what effect COVID-19 has had on data science job hiring in 2020. Second, I would like to gather some insight on when and where recent graduates should look in order to get their first job.
+This project has two purposes. First, I would like to see what effect COVID-19 has had on data science job hiring in 2020. Second, I would like to gather some insight on when and where recent graduates should look to start their career in data science.
 
 ## Data
 
@@ -67,11 +67,7 @@ Here we can see that the quartiles in the second quarter of 2020 are all down by
 
 ![](images/boxPlotSalaryByQ1throughQ2.png)
 
-With the two quarters combined we can see that the salary distribution for the combined first and second quarter in 2020 is still up compared to previous years by about 4k or more in each of the quartiles. Now let's combine all three quarters and see how the years compare. This way we are comparing the complete information of all years.
-
-![](images/boxPlotSalaryByYearAndQ1ThroughQ3.png)
-
- We still see that the distribution for 2020 is up by about 4k in the first quartile, median, and third quartile compared to past years. If the slow down in hiring and the increase in salaries were the only variables that changed, then I would feel comfortable concluding that early career positions were hit the hardest by COVID-19. However, I also have information on location and which companies have been hiring so let's explore this data to see what's been changing here. 
+With the two quarters combined we can see that the salary distribution for the combined first and second quarter in 2020 is still up compared to previous years by about 4k or more in each of the quartiles.
 
 ## Locations
 
